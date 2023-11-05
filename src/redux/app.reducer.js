@@ -17,6 +17,12 @@ export const appReducer = (state = initialState, { type, payload }) => {
         ...state,
         carts: [...state.carts, payload]
       }
+
+    case appAction.REMOVE_ITEM:
+      return {
+        ...state,
+        carts: state.carts.filter(item => item.id !== payload)
+      }
     default:
       return state;
   }

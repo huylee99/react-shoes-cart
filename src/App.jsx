@@ -1,4 +1,4 @@
-import Cart from "./components/cart";
+import Cart from "./components/Cart";
 import ShopItemList from "./components/ShopItemList";
 import "./style.css";
 
